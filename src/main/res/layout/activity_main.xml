@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/truckMovingImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_logistics_truck"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/roadLayout"
+            >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_marginBottom="60dp"
+            android:background="#ffffff"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="#ffffff" />
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_above="@+id/roadLayout"
+            android:src="@drawable/ic_factory"
+            android:id="@+id/factoryImage"
+            />
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/roadLayout"
+            android:src="@drawable/ic_warehouse"
+
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="100dp"
+            android:layout_above="@id/factoryImage"
+
+            >
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_delivery_truck"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trucks24"
+                android:layout_marginTop="-30dp"
+                android:textColor="#ffffff"
+                android:textSize="60sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
